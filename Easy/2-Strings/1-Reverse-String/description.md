@@ -12,3 +12,8 @@ Write a function that reverses a string. The input string is given as an array o
 
 You must do this by modifying the input array [in-place](https://en.wikipedia.org/wiki/In-place_algorithm) with `O(1)` extra memory.
 
+## Объяснение
+1. Задаем переменные `left`, `right` — индекс 1-го и последнего значения в массиве
+2. Проходимся по массиву в цикле до тех пор, пока `left` не станет меньше `right`
+3. Присваиваем значение в массиве слева значению справа и наоборот. И делаем до тех пор, пока не дойдем до середины массива
+4. На каждой итерации: увеличиваем `left`, уменьшаем `right`

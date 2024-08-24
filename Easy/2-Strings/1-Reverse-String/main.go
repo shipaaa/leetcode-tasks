@@ -15,12 +15,12 @@ func main() {
 }
 
 func reverseString(s []byte) {
-	var interimS []byte
-	for i := len(s) - 1; i >= 0; i-- {
-		interimS = append(interimS, s[i])
-	}
-	for i := range s {
-		s[i] = interimS[i]
+	left, right := 0, len(s)-1
+	for left < right {
+		fmt.Println(left, right)
+		s[left], s[right] = s[right], s[left]
+		left++
+		right--
 	}
 }
 
